@@ -17,8 +17,21 @@
                     <h4> <a href="index.html"> Voltar </a> </h4>
 					<img src="img/cimento.jpeg" width="200" height="200"/> 
 					<h4> Este cimento é um dos melhores para fazer concreto. </h4> 
-				</th>
+                </th>
 			</tr>
 		</table>
+        <table>
+            <tr>
+                <form action="enviar.php" method="post" name="form">
+                    Nome: <br/>
+                    <input type="text" name="nome"> <br/>
+                    E-mail: <br/>
+                    <input type="text" name="email"> <br/>
+                    Comentário: <br/>
+                    <textarea name="comentario" rows="10" cols="30"></textarea> <br/>
+                    <input type="submit" value="Enviar"/>
+                </form>
+            </tr>
+        </table>
 	</body>
 </head>
