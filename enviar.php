@@ -15,4 +15,7 @@
 
     // envia o email
     mail($destinatario, $comentario , $body, "From: $email\r\n");
+	
+	// redireciona para a página de obrigado
+	header("location:obrigado.htm");
 ?>
