@@ -1,0 +1,33 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+    font-family: "Times New Roman";
+    font-size: 100%;
+    color: black;
+}
+
+.header{
+    background-color: gray;
+    color: white;
+    padding: 20px;
+}
+
+.footer{
+    background-color: gray;
+    color: white;
+    font-size: 30%;
+    padding: 5px;
+}
+
+a:link, a:visited{
+    color: black;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+}
+
+a:houver, a:active{
+    background-color:red;
+}
