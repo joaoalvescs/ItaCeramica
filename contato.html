@@ -6,6 +6,17 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<title> ITA CERÂMICA | ARGAMASSA </title>
 		<script src="script.js"></script>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+		<script>
+			$(document).ready(function(){
+				$("#hide").click(function(){
+					$("p").hide();
+				});
+				$("#show").click(function(){
+					$("p").show();
+				});
+			});
+		</script>
 		<div class="header">
 			<a href="index.html">
 				<img src="img\logo.jpg" width="250" height="200" style="max-width:100%;height:auto;"/>
@@ -20,7 +31,15 @@
 		<table>
 			<tr>
 				<th> 
-					<h4> Entraremos em contato. Basta informar o dia de contato. </h4> 
+					<h4> 
+						<button id="show"> LER TERMO </button>
+						<button id="hide"> ESCONDER TERMO</button>
+					</h4> 
+					<div class="termo">
+							1 - Os seus serão armazenados em sigilo; <br/>
+							2 - Os seus não serão vendidos ou divulgados a terceiros; <br/>
+							3 - Enviando seus dados de contato, concorda que nós entraremos em contato.
+					</div>
 				</th>
 			</tr>		
 		</table>
@@ -31,9 +50,9 @@
                     <input type="text" id="nomeid" required="required" name="nome"> <br/>
                     E-mail: <br/>
                     <input type="text" id="emailid" name="email"> <br/>
-                    Comentário: <br/>
+                    O que deseja? <br/>
                     <textarea name="comentario" id="comentarioid" rows="10" cols="30"></textarea> <br/>
-					<input type="submit" onclick="Enviar();" value="Enviar"/>
+					<input type="submit" onclick="Enviar1();" value="Enviar"/>
                 </form>
             </tr>
 		</table>
